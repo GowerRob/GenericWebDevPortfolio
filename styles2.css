@@ -1,0 +1,187 @@
+:root{
+    --accented:#0cb8c2;
+}
+
+body{
+    background-color: #03011c;
+    font-family: Poppins, sans-serif;
+    color:white;
+    
+
+}
+
+
+
+button{
+    background-color: var(--accented);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 5px;
+    padding:0px 15px;
+}
+
+button:hover {
+    background-color: black; 
+    color: white;
+  }
+
+.container{
+    width:90%;
+    height:748px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:30px 300px 300px ;
+
+    gap:9px;
+    margin:3px 10px 3px 40px;
+
+  }
+
+  .hero{
+    
+    grid-column:span 3;
+    padding: 20px
+
+  }
+
+  .myPicBox{
+    padding:20px;
+    grid-column:span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+  }
+
+
+  #myImage{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 25% 25%;  
+    
+   
+  }
+
+  .navbar{
+    
+    grid-column:span 5;
+  }
+
+  .secondImage{
+    display: flex;
+    align-items: center;
+    grid-column:span 2;
+
+
+  }
+
+  .textBlock{
+    
+    align-items: center;
+    grid-column:span 3;
+  }
+
+  a{
+    text-decoration: none;
+    color:white;
+  }
+
+  .logo{
+    font-size:2rem;
+    font-weight:800;
+  }
+
+  .accented{
+    color:var(--accented);
+    animation-name:colorShift;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+  }
+
+  @keyframes colorShift{
+    0% {color:white}
+    25% {color: var(--accented)}
+    50% {color:red}
+    75% {color: var(--accented)}
+
+
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    
+
+  }
+  .nav-links{
+    display: flex;
+    
+  }
+
+  .nav-item{
+    display: block;
+    margin-left:15px;
+    font-size:0.7rem
+    
+  }
+
+  .tinyImage{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    animation-name:fly;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
+  }
+
+  @keyframes fly{
+    0% {left:0px; top:0px;}
+    5% {left:200px; top:150px;}
+    15% {left:150px; top:300px;}
+    45% {left:100px; top:100px;}
+    55% {left:600px; top:300px;}
+    65% {left:600px; top:500px;}
+    75% {left:400px; top:200px;}
+    866% {left:300px; top:300px;}
+    100% {left:0px; top:0px;}
+
+  }
+
+
+
+
+
+  #cityScape{
+    height:100%;
+    
+    border-radius: 5%;
+    object-fit: cover;
+    object-position: 25% 25%; 
+    border: 5px solid black;
+    align-items: start;
+
+  }
+
+  p{
+    font-size:0.7rem;
+  }
+
+
+
+
+  .subTitle::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 0.5rem;
+    background-color: var(--accented);
+  }
