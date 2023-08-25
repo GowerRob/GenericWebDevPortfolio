@@ -34,7 +34,7 @@ button:hover {
     height:748px;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows:30px 300px 300px ;
+    grid-template-rows:30px 400px 500px ;
 
     gap:9px;
     margin:3px 10px 3px 40px;
@@ -59,8 +59,8 @@ button:hover {
 
 
   #myImage{
-    width:200px;
-    height:200px;
+    width:300px;
+    height:300px;
     border-radius: 50%;
     object-fit: cover;
     object-position: 25% 25%;  
@@ -133,8 +133,8 @@ button:hover {
   }
 
   .tinyImage{
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     position: absolute;
     animation-name:fly;
     animation-duration: 8s;
